@@ -12,7 +12,7 @@ class App extends Component {
         </header>
           <h1>This is a React app running in a docker container on Elastic Beanstalk</h1>
         <p className="App-intro">
-          Have a nice day.
+          I've just submitted changes from the feature branch
         </p>
       </div>
     );
