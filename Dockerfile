@@ -1,11 +1,10 @@
 FROM node:alpine as builder
 
-WORKDIR /app/
+WORKDIR /app
 
 COPY package.json ./
 
 RUN npm install
-# npm i -g yarn && yarn
 
 COPY ./ ./
 
