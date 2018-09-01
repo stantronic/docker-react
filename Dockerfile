@@ -4,12 +4,12 @@ WORKDIR /app/
 
 COPY package.json ./
 
-RUN npm i -g yarn && yarn
+RUN npm install
+# npm i -g yarn && yarn
 
 COPY ./ ./
 
-RUN yarn build
-
+RUN npm run build
 
 FROM nginx
 

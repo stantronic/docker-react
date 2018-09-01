@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t stantronic/docker-react -f Dockerfile.dev .
+  - docker build -t stantronic/docker-react -f Dockerfile.dev ./
 
 script:
   - docker run stantronic/docker-react yarn test -- --coverage
