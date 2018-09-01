@@ -2,11 +2,11 @@ FROM node:alpine as builder
 
 WORKDIR /app
 
-COPY package.json .
+COPY package.json ./
 
 RUN npm i -g yarn && yarn
 
-COPY . .
+COPY ./ ./
 
 RUN yarn build
 
